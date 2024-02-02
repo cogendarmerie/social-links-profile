@@ -11,7 +11,7 @@ function App() {
             text: "Github"
         },
         {
-            link: "https://frontendmentor.com",
+            link: "https://www.frontendmentor.io",
             text: "Frontend Mentor"
         },
         {
@@ -32,10 +32,7 @@ function App() {
             <main>
                 <section id="container-card-profile">
                     <Card>
-                        <div>
-                            <Avatar picture="/assets/images/avatar-jessica.jpeg"/>
-                        </div>
-                        <UserDetails name="Jessica Randall" city="London, United Kingdom" bio="Front-end developer and avid reader." />
+                        <UserDetails name="Jessica Randall" city="London, United Kingdom" bio="Front-end developer and avid reader." picture="/assets/images/avatar-jessica.jpeg" />
                         <div className="card-links-container">
                         {/* Links */}
                             {links.map((link) => <Button key={link.text} link={link.link} text={link.text}/>)}

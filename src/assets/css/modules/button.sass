@@ -1,0 +1,24 @@
+$button-radius: 8px
+$button-padding: 16px 8px
+$button-font-size: 12px
+
+.btn
+  text-decoration: none
+  text-align: center
+  display: inline-flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  color: $color-white
+  border-radius: $button-radius
+  padding: $button-padding
+  transition: all .25s ease
+  font-size: $button-font-size
+  font-weight: 600
+
+.btn-primary
+  background: $color-grey
+
+  &:hover
+    background: $color-primary
+    color: $color-grey
